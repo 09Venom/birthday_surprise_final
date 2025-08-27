@@ -1,0 +1,8 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{min-height:100vh;background:#122139;color:#fff;font-family:sans-serif;overflow:hidden;}
+.surprise-button{padding:10px 20px;border:none;border-radius:20px;background:#d52d58;color:#fff;cursor:pointer;}
+#scene1-container,#scene2-container,#scene3-container,#scene4-container{display:none;position:absolute;inset:0;}
+#scene1:checked~#scene1-container{display:block;}
+#scene2:checked~#scene2-container{display:block;}
+#scene3:checked~#scene3-container{display:block;}
+#scene4:checked~#scene4-container{display:block;}

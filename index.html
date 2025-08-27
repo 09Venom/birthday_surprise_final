@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <input type="radio" name="scene" id="scene1" class="scene-radio" checked />
+  <input type="radio" name="scene" id="scene2" class="scene-radio" />
+  <input type="radio" name="scene" id="scene3" class="scene-radio" />
+  <input type="radio" name="scene" id="scene4" class="scene-radio" />
+
+  <div class="surprise-controls">
+    <button id="prevBtn" class="surprise-button">⬅ Prev</button>
+    <button id="nextBtn" class="surprise-button">Next ➡</button>
+  </div>
+
+  <div id="scene1-container">
+    <div class="scene1-content">
+      <h1>🎉 Happy Birthday 🎂</h1>
+      <p>Click the button to begin your surprise!</p>
+      <button id="startBtn" class="surprise-button">Surprise 🎁</button>
+    </div>
+  </div>
+
+  <div id="scene2-container">
+    <canvas id="sparkles-scene2"></canvas>
+    <div class="cake-scene">
+      <div class="birthday-message">🎂 Make a Wish! 🎂</div>
+      <div class="cake">
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="candle"><div class="flame"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scene3-container">
+    <canvas id="sparkles-scene3"></canvas>
+    <div class="main-carousel">
+      <div class="carousel">
+        <div class="carousel-item"><div class="carousel-box"><span class="num">1</span><span class="title">😍 Love</span></div></div>
+        <div class="carousel-item"><div class="carousel-box"><span class="num">2</span><span class="title">🥳 Fun</span></div></div>
+        <div class="carousel-item"><div class="carousel-box"><span class="num">3</span><span class="title">🌹 Beauty</span></div></div>
+      </div>
+    </div>
+    <button class="intention-btn">Go to Messages 💌</button>
+  </div>
+
+  <div id="scene4-container">
+    <header class="page4-header"><h1>💌 Birthday Messages</h1></header>
+    <div class="page4-container">
+      <ul class="page4-ul"></ul>
+      <div class="page4-controls">
+        <button aria-label="Previous message">⬆</button>
+        <button aria-label="Next message">⬇</button>
+      </div>
+      <div class="page4-border"></div>
+    </div>
+    <button class="back-btn">⬅ Back to Carousel</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/scene2.js"></script>
+  <script src="js/scene3.js"></script>
+  <script src="js/scene4.js"></script>
+</body>
+</html>
